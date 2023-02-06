@@ -1,0 +1,36 @@
+<% layout("layouts/boilerplate.ejs") %> 
+
+<div class="container" id="checkout-form">
+  <h1 class="form-heading">Process Payment</h1>
+  <form method="POST" action="/checkout/pay?_method=POST">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        aria-describedby="emailHelp"
+        name="email"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="amount">Amount</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text">₦</span>
+        <input
+          type="number"
+          id="amount"
+          min="0"
+          class="form-control"
+          aria-label="Amount (to the nearest dollar)"
+          name="amount"
+          required
+        />
+        <span class="input-group-text">.00</span>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success submit-btn">Proceed to Payment</button>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+#checkout-form {
+  justify-content: center;
+  max-width: 40%;
+  margin-top: 5em;
+}
+
+.form-heading {
+  text-align: center;
+  border-bottom: 1px solid rgba(162, 161, 144, 0.5);
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.submit-btn {
+  width: 100%;
+}
